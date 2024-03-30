@@ -1,0 +1,28 @@
+.upcomingWebinarsContainer {
+  background-color: #1f1f1f;
+  padding: 100px 0;
+  h1,
+  p {
+    text-align: center;
+    color: #ffffff;
+  }
+  h1 {
+    //styleName: Heading/Headline 1;
+    font-family: "Poppins";
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 76px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  p {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 50px;
+  }
+}

@@ -1,0 +1,36 @@
+.blogCard {
+  cursor: pointer;
+  p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .cardDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+      font-family: "Poppins";
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .photoSection {
+      display: flex;
+      align-items: center;
+      //   gap: 10px;
+      border-right: 1px solid black;
+      padding-right: 5px;
+      img {
+        padding-right: 5px;
+      }
+    }
+  }
+}

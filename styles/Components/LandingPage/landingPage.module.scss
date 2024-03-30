@@ -1,0 +1,297 @@
+.landingPageContainer {
+  .cardTitle {
+    //styleName: Heading/Headline 2;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 567px;
+    .greenColor {
+      color: #19aea5;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 42px;
+    }
+  }
+  //   .greenButton {
+  //     background-color: #19aea5;
+  //   }
+}
+
+.partners {
+  padding: 16px 0 60px 0;
+  h2 {
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0c0c0c;
+  }
+
+  .imageSection {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+  }
+}
+
+.coursesAndProg {
+  background-color: #f5f7fa;
+  padding: 22px 80px 60px;
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+
+    h2 {
+      font-family: "Poppins";
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 76px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    p {
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #717171;
+      margin-bottom: 40px;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    .leftSection {
+      flex: 0.2;
+      background-color: #ffffff;
+      padding: 11px 16px;
+      min-width: 239px;
+      .tabButton {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 16px 0px;
+        background-color: #f5f7fa;
+        margin: 17px 0;
+        cursor: pointer;
+        &.selected {
+          background-color: #a3f2ed;
+        }
+      }
+      .tabSection {
+        p {
+          font-family: "Poppins";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #062b29;
+          border-bottom: 0.5px dashed #4d4d4d;
+        }
+      }
+    }
+    .rightSection {
+      flex: 0.8;
+
+      .topTabSection {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        span {
+          //styleName: Body/Medium/Body 3;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: center;
+          &.active {
+            color: #13827c;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .cardPage {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+        flex-wrap: wrap;
+      }
+      .buttonContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .BlackButton {
+          background-color: #333333;
+          font-family: "Poppins";
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: center;
+          border: none;
+          min-width: 350px;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+.LearningModel {
+  padding: 22px 80px 60px;
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+
+    h2 {
+      font-family: "Poppins";
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 76px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 0;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #717171;
+      margin-bottom: 40px;
+    }
+  }
+  p {
+    margin-top: 50px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .LearningModelCardSection {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+  }
+}
+
+.sliderContainer {
+  // width: calc(100vw - 100px);
+  margin: 0px auto 0 auto;
+  background-color: #f5f7fa;
+
+  &.anotherSliderContainer {
+    background-color: #282727e3;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 44px;
+    padding-top: 28px;
+
+    &.anotherSlider {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+  }
+  p {
+    &.head {
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .bottomText {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    color: #13827c !important;
+    margin: 60px 0 0 0;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }
+}
+
+.contactSection {
+  width: 98vw;
+  img {
+    width: 98vw;
+    height: 430px;
+  }
+}
+
+.freqQues {
+  background-color: #f5f7fa;
+  padding: 40px 40px;
+  h2 {
+    //styleName: Heading/Headline 2;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: "#0C0C0C";
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  p {
+    //styleName: Heading/Headline 4;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 30px;
+  }
+  .accordianContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    .accor {
+      margin-bottom: 16px;
+    }
+  }
+}

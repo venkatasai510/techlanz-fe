@@ -1,0 +1,103 @@
+.CourseCardContainer {
+  border-radius: 13px;
+  overflow: hidden;
+  p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .dateDetails {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    &:nth-of-type(1) {
+      margin-top: 8px;
+    }
+    &:nth-of-type(2) {
+      padding-bottom: 44px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #f5f7fa;
+    }
+  }
+
+  .amountSection {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      white-space: nowrap;
+
+      &.original {
+        //styleName: Body/Medium/Body 4;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        color: #717171;
+        &::after {
+          content: " ";
+          position: absolute;
+          left: -2px;
+          top: 7px;
+          height: 1px;
+          width: 105%;
+          background-color: #717171;
+        }
+      }
+
+      &.rate {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #2e7d31;
+      }
+    }
+  }
+
+  .buttonSection {
+    display: flex;
+    align-items: center;
+    > button {
+      width: 50%;
+      border: none !important;
+      border-radius: none !important;
+      --bs-btn-border-radius: none;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      white-space: nowrap;
+      text-align: center;
+      cursor: pointer;
+      padding: 7px 0;
+      &.transparent {
+        background-color: #f5f7fa;
+        color: #19aea5;
+      }
+      &.green {
+        color: #f5f7fa;
+        background-color: #19aea5;
+      }
+    }
+  }
+}

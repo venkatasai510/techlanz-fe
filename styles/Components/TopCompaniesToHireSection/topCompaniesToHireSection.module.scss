@@ -1,0 +1,54 @@
+.TopCompaniesToHireSectionContainer {
+  background-color: #fff;
+  width: calc(100% - 500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .content {
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px auto;
+    padding: 80px 280px;
+
+    h2 {
+      font-family: "Poppins";
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 61px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      //styleName: Heading/Headline 4;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #4d4d4d;
+      margin-bottom: 5px;
+    }
+    button {
+      background-color: #19aea5;
+      border: none;
+      width: 309px;
+      margin-top: 44px;
+      padding: 12px;
+
+      //styleName: Heading/Headline 4;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

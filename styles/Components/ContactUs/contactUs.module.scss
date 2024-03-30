@@ -1,0 +1,17 @@
+.ContactUsContainer {
+  height: calc(100vh - 69px);
+  display: flex;
+  align-items: flex-start;
+  background-color: #e5f0fe;
+  gap: 70px;
+  padding: 60px 75px;
+
+  .leftSection {
+    flex: 0.5;
+  }
+
+  .rightSection {
+    flex: 0.5;
+    background-color: #fff;
+  }
+}

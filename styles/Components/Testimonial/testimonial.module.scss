@@ -1,0 +1,50 @@
+.testimonialCardContainer {
+  margin: 0 auto;
+  max-width: 905px;
+  height: 400px;
+  background-color: #ffffff;
+  padding: 35px 80px;
+  position: relative;
+  .quotes {
+    position: absolute;
+    left: 35px;
+  }
+  .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 23px;
+
+    p {
+      //styleName: Body/Medium/Body 1;
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #717171;
+      margin-bottom: 0;
+    }
+
+    .rightSection {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h5 {
+        margin: 10px 0;
+        font-family: "Poppins";
+        font-size: 28px;
+        white-space: nowrap;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      p {
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+}

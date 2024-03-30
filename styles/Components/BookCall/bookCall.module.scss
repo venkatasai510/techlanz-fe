@@ -1,0 +1,54 @@
+.bookCallContainer {
+  background-color: #f5f7fa;
+  padding: 30px 44px;
+  max-width: 1151px;
+  margin: 48px auto;
+
+  h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .inputSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    > input {
+      max-width: 360px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      background-color: #19aea5;
+      border: none;
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      white-space: nowrap;
+      min-width: 233px;
+      // top: 130px
+      // left: 882px
+      padding: 8px 16px 8px 16px;
+      border-radius: 4px;
+      gap: 10px;
+    }
+  }
+}

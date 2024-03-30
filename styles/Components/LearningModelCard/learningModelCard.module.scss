@@ -1,0 +1,27 @@
+.learningModelContainer {
+  border: none;
+  width: 300px;
+
+  p {
+    //styleName: Heading/Heading 5;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
+
+    &.desc {
+      //styleName: Body/Medium/Body 2;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #89939e;
+      margin-top: 0;
+    }
+  }
+}

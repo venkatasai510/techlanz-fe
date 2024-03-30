@@ -1,0 +1,47 @@
+.mentors {
+  background-color: #e8f0fe;
+  padding: 22px 80px 60px;
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-family: "Poppins";
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 76px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 0;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #717171;
+      margin-bottom: 40px;
+    }
+  }
+
+  .mentorScrollContainer {
+    display: flex;
+    width: calc(100vw - 200px);
+    overflow-x: auto;
+    gap: 100px;
+    justify-content: space-between;
+    &::-webkit-scrollbar {
+      width: 6px !important;
+      height: 6px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      background: #8b8e94;
+    }
+  }
+}

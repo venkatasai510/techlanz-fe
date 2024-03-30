@@ -1,0 +1,19 @@
+.accordianContainer {
+  border-radius: 4px;
+  //   border: 1px dashed #dde1e6;
+  --bs-accordion-border-color: none;
+  padding: 0;
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #21272a !important;
+    margin-bottom: 0 !important;
+  }
+}

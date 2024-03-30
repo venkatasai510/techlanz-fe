@@ -1,0 +1,91 @@
+// .sliderContainer {
+//   // width: calc(100vw - 100px);
+//   margin: 0 auto;
+//   background-color: #f5f7fa;
+
+//   &.anotherSliderContainer {
+//     background-color: #282727e3;
+//   }
+
+//   h2 {
+//     text-align: center;
+//     font-family: "poppins";
+//     font-size: 36px;
+//     font-weight: 600;
+//     line-height: 44px;
+//     letter-spacing: 0em;
+//     text-align: center;
+//     margin-bottom: 44px;
+//     padding-top: 28px;
+
+//     &.anotherSlider {
+//       margin-bottom: 12px;
+//       color: #ffffff;
+//     }
+//   }
+//   p {
+//     &.head {
+//       font-family: "Poppins";
+//       font-size: 20px;
+//       font-weight: 600;
+//       line-height: 28px;
+//       letter-spacing: 0em;
+//       text-align: center;
+//       color: #ffffff;
+//     }
+//   }
+
+//   .bottomText {
+//     font-family: "Poppins";
+//     font-size: 20px;
+//     font-weight: 600;
+//     line-height: 28px;
+//     text-align: center;
+//     color: #13827c !important;
+//     margin: 60px 0 0 0;
+//     padding-bottom: 30px;
+//     cursor: pointer;
+//   }
+// }
+
+.contactSection {
+  width: 98vw;
+  img {
+    width: 98vw;
+    height: 430px;
+  }
+}
+
+.freqQues {
+  background-color: #f5f7fa;
+  padding: 40px 40px;
+  h2 {
+    //styleName: Heading/Headline 2;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: "#0C0C0C";
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  p {
+    //styleName: Heading/Headline 4;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 30px;
+  }
+  .accordianContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    .accor {
+      margin-bottom: 16px;
+    }
+  }
+}

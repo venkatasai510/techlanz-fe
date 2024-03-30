@@ -1,0 +1,69 @@
+.landingPageSliderCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+  margin: 30px 140px;
+  max-height: 425px;
+  overflow: hidden;
+
+  .leftSection {
+    span {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 10px;
+      &.head {
+        font-family: " Poppins";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+    p {
+      //styleName: Body/Medium/Body 1;
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 42px;
+      max-width: 567px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      max-width: 537px;
+      //   margin-bottom: 14px;
+      //   margin-top: 15px;
+      margin-bottom: 0;
+      span {
+        &.greenColor {
+          color: #19aea5 !important;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 44px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    .topHeading {
+      padding: 8px 28px;
+      background-color: #d1f8f6;
+      border-radius: 10px;
+    }
+    .heading {
+      margin-bottom: 12px;
+    }
+  }
+}
