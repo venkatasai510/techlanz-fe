@@ -5,8 +5,10 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import styles from "styles/Components/Footer/footer.module.scss";
 import Button from "react-bootstrap/Button";
+import { useRouter } from "node_modules/next/router";
 
 const Footer = () => {
+  const router = useRouter()
   return (
     <div className={styles.footerSection}>
       <div className={styles.topSection}>
@@ -24,11 +26,20 @@ const Footer = () => {
 
       <div className={styles.footerLinksContainer}>
         <div className={styles.footerCol}>
-          <span className={styles.heading}>Contact us</span>
-          <span>Twenty One</span>
-          <span>Thirty Two</span>
-          <span>Fourty Three</span>
-          <span>Fifty Four</span>
+          <span className={styles.heading} onClick={() => router.push("/contact-us")}>Contact us</span>
+          <div className={styles.contactUsItem}>
+            <Image src={SVGImages.mail} className={styles.contactIcon} />
+            <div className={styles.contactTag}>
+              <a href="mailto:info@techlanz.com">
+
+                info@techlanz.com
+              </a>
+            </div>
+          </div>
+          <div className={styles.contactUsItem}>
+            <Image src={SVGImages.call} className={styles.contactIcon} />
+            <div className={styles.contactTag}>+91 9047116404</div>
+          </div>
         </div>
         <div className={styles.footerCol}>
           <span className={styles.heading}>Techlanz</span>

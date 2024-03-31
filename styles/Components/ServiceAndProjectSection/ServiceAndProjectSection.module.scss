@@ -32,6 +32,7 @@
   .cardSection {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 50px;
