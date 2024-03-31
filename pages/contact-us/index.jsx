@@ -1,74 +1,68 @@
+import Topbar from 'components/Topbar/index'
+import React from 'react'
+import style from "styles/Components/ContactUs/contactUs.module.scss"
+import Image from "next/image"
 import SVGImages from "assets/images/index";
-import Topbar from "components/Topbar/index";
-import Image from "node_modules/next/image";
-import React from "react";
-import styles from "styles/Components/ContactUs/contactUs.module.scss";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import Button from "node_modules/react-bootstrap/esm/Button";
-const ContactUs = () => {
+
+
+function index() {
   return (
-    <>
+    <div className={style.container}>
       <Topbar />
-      <div className={styles.ContactUsContainer}>
-        <div className={styles.leftSection}>
-          <p>Connect With Us: Your Questions, Our Answers! 🤝</p>
+      <div className={style.section}>
+        <div className={style.promo}>
+          <h3>Connect With Us: Your Questions, Our Answers! 🤝</h3>
           <p>
-            For any queries, Please reach out to us. Our Support team will get
-            back to you within 24 hours.
+            For any queries, Please reach out to us. Our Support team will get back to you within 24 hours.
           </p>
+          <div className={style.contactUsItem}>
+            <Image src={SVGImages.blackMail} className={style.contactIcon} />
+            <div className={style.contactTag}>
+              <a href="mailto:info@techlanz.com">
 
-          <div>
-            <Image src={SVGImages.message} alt="message" />
-            Contact@techlanz.com
+                info@techlanz.com
+              </a>
+            </div>
           </div>
-          <div>
-            <Image src={SVGImages.phone} alt="phone" />
-            +91 7631783648
+          <div className={style.contactUsItem}>
+            <Image src={SVGImages.blackcall} className={style.contactIcon} />
+            <div className={style.contactTag}>+91 9047116404</div>
           </div>
-
-          <Image src={SVGImages.contactUs} alt="contactUs" />
+          <Image
+            src={SVGImages.contactUs}
+            width={560}
+            height={390}
+            alt="login-bg"
+            className={style.loginbg}
+          />
         </div>
-        <div className={styles.rightSection}>
-          <p>Contact us</p>
-
-          <label>Name</label>
-          <Form.Control
-            placeholder="johndadev"
-            onChange={(e) => console.log(e)}
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-          <label>Email</label>
-          <Form.Control
-            placeholder="johndoe@email.com"
-            onChange={(e) => console.log(e)}
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-          <label>Phone No</label>
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="basic-addon1">+91</InputGroup.Text>
-            <Form.Control
-              placeholder="**********"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-
-          <label>Message</label>
-          <Form.Control
-            placeholder="eg."
-            onChange={(e) => console.log(e)}
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-
-          <Button>Submit</Button>
+        <div className={style.loginform}>
+          <div className={style.formContainer}>
+            <div className={style.formwrapper}>
+              <h2>Contact Us</h2>
+              <div className={style.formItem}>
+                <label>name</label>
+                <input />
+              </div>
+              <div className={style.formItem}>
+                <label>email</label>
+                <input />
+              </div>
+              <div className={style.formItem}>
+                <label>Phone number</label>
+                <input />
+              </div>
+              <div className={style.formItem}>
+                <label>message</label>
+                <input />
+              </div>
+              <div className={style.loginbtn}> SIGN IN </div>
+            </div>
+          </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div >
+  )
+}
 
-export default ContactUs;
+export default index

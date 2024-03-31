@@ -1,20 +1,24 @@
 .footerSection {
   background-color: #333333;
   padding: 40px;
+
   .topSection {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #c1c7cd;
     padding-bottom: 49px;
+
     .rightSection {
       display: flex;
       align-items: center;
       gap: 40px;
+
       input {
         width: 325px;
         padding: 13px 16px;
       }
+
       button {
         background-color: #13827c;
         white-space: nowrap;
@@ -63,11 +67,37 @@
         &.heading {
           font-size: 22px;
           margin-bottom: 28px;
+
         }
       }
     }
   }
 
+                                                                                                                                                                                                                                                                .contactUsItem {
+                                                                                                                                
+                                                                                                                                                                                                                                                                  padding: 5px;
+                                                                                                                                                                                                                                                                  display: flex;
+                                                                                                                                                                                                                                                                  align-items: center;
+                                                                                                                                                                                                                                                                  gap: 5px;
+                                                                                                                                
+                                                                                                                                                                                                                                                                  .contactIcon {
+                                                                                                                                                                                                                                                                    width: 15px;
+                                                                                                                                                                                                                                                                    height: 15px;
+                                                                                                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                                                                                                  }
+                                                                                                                                
+                                                                                                                                                                                                                                                                  .contactTag {
+                                                                                                                                                                                                                                                                    font-size: 14px !important;
+                                                                                                                                                                                                                                                                    font-weight: 500;
+                                                                                                                                                                                                                                                                    color: white;
+                                                                                                                                
+                                                                                                                                                                                                                                                                    a {
+                                                                                                                                                                                                                                                                      text-decoration: none;
+                                                                                                                                                                                                                                                                      color: white;
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                  }
+                                                                                                                                
+                                                                                                                                                                                                                                                                }
   .socialMediaLinks {
     p {
       //styleName: Body/S;
@@ -79,15 +109,17 @@
       text-align: left;
       color: #89939e;
     }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 55px;
+
     .icons {
       display: flex;
       align-items: center;
       gap: 18px;
-      > img {
+>img {
         cursor: pointer;
       }
     }

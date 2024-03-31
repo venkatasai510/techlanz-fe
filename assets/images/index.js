@@ -62,6 +62,10 @@ import CoursesTableImage from "./coursesTableImage.png";
 import DesktopVideoImage from "./desktopVideoImage.png";
 import WhatPeopleThinkCard from "./whatPeopleThinkCard.png";
 import loginbg from "./Login/lanz-login-bg.png";
+import mail from "./Footer/mail.png";
+import call from "./Footer/call.png";
+import blackMail from "./Footer/blackMail.png";
+import blackcall from "./Footer/blackcall.png";
 const SVGImages = {
   logo: Logo,
   heroSection: HeroSection,
@@ -124,7 +128,11 @@ const SVGImages = {
   whatPeopleThinkCard: WhatPeopleThinkCard,
   google: Google,
   ratingFullStar: RatingFullStar,
-  loginbg: loginbg
+  loginbg: loginbg,
+  mail: mail,
+  call: call,
+  blackMail: blackMail,
+  blackcall: blackcall,
 };
 
 export default SVGImages;

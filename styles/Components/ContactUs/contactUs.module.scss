@@ -1,17 +1,182 @@
-.ContactUsContainer {
-  height: calc(100vh - 69px);
-  display: flex;
-  align-items: flex-start;
-  background-color: #e5f0fe;
-  gap: 70px;
-  padding: 60px 75px;
+.container {
+  width: 100%;
+  /* height: 100%; */
+  font-family: "Poppins";
 
-  .leftSection {
-    flex: 0.5;
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 68px;
+    background-color: #e5f0fe;
+    height: 100vh;
+
+    .promo {
+      width: 50%;
+      height: 100%;
+      padding-left: 78px;
+
+      h3 {
+        color: #19aea5;
+        font-weight: 600;
+        font-size: 36px;
+        font-family: "Poppins";
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 20px;
+        font-family: "Poppins";
+        color: #0c0c0c;
+      }
+
+      .loginbg {
+        width: 600px;
+        height: 400px;
+      }
+
+      .contactUsItem {
+
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .contactIcon {
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+        }
+
+        .contactTag {
+          font-size: 14px !important;
+          font-weight: 500;
+          color: black;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+      }
+    }
+
+    .loginform {
+      width: 50%;
+      height: 80vh;
+
+      .formContainer {
+        width: 623px;
+        height: 600px;
+        font-family: "Poppins";
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+
+        .formwrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            margin-top: 74px;
+            font-family: "Poppins";
+          }
+
+          .formItem {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+
+            label {
+              color: #757575;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+            }
+
+            input {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              outline: none;
+              margin-top: 6px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+
+          .loginbtn {
+            width: 380px;
+            height: 60px;
+            background-color: #19aea5;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
+}
 
-  .rightSection {
-    flex: 0.5;
-    background-color: #fff;
+/* Media Queries */
+@media (max-device-width: 567px) {
+  .section {
+    flex-direction: column !important;
+    padding-top: 15px !important;
+
+    .promo {
+      width: 100% !important;
+      padding: 0px 20px !important;
+      height: auto !important;
+
+      .loginbg {
+        width: 330px;
+        height: 226px;
+      }
+    }
+
+    .loginform {
+      width: 100% !important;
+      height: auto !important;
+      justify-content: center;
+      display: flex !important;
+
+      .formContainer {
+        width: 95% !important;
+        margin: 0px !important;
+        padding: 10px;
+
+        .formwrapper {
+          width: 100% !important;
+
+          h2 {
+            font-size: 29px !important;
+            margin-top: 10px !important;
+          }
+
+          .formItem {
+            width: 90% !important;
+          }
+
+          .loginbtn {
+            width: 90% !important;
+          }
+        }
+      }
+    }
   }
 }
