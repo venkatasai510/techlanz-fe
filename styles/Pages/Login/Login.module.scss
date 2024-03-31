@@ -1,0 +1,157 @@
+.container {
+    width: 100%;
+    // height: 100%;
+    font-family: "Poppins";
+
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 68px;
+        background-color: #E5F0FE;
+
+        .promo {
+            width: 50%;
+            height: 80vh;
+            padding-left: 78px;
+
+            h3 {
+                color: #19AEA5;
+                font-weight: 600;
+                font-size: 36px;
+                font-family: "Poppins";
+
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 20px;
+                font-family: "Poppins";
+                color: #0C0C0C;
+            }
+        }
+
+        .loginform {
+            width: 50%;
+            height: 80vh;
+
+            .formContainer {
+                width: 623px;
+                height: 530px;
+                font-family: "Poppins";
+                background-color: white;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 40px;
+
+                .formwrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    h2 {
+                        font-weight: 600px;
+                        font-size: 36px;
+                        line-height: 44px;
+                        margin-top: 74px;
+                        font-family: "Poppins";
+                        // margin-bottom: 44px;
+                    }
+
+                    .formItem {
+                        display: flex;
+                        flex-direction: column;
+                        width: 380px;
+
+
+                        label {
+                            color: #757575;
+                            font-weight: 400;
+                            size: 12px;
+                            line-height: 16px;
+                        }
+
+                        input {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            outline: none;
+                            margin-top: 6px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                        }
+                    }
+
+                    .loginbtn {
+                        width: 380px;
+                        height: 60px;
+                        background-color: #19AEA5;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+//media queries
+
+@media (max-device-width: 567px) {
+    .section {
+        flex-direction: column !important;
+        padding-top: 15px !important;
+
+        .promo {
+            width: 100% !important;
+            padding: 0px 20px 0px 20px !important;
+            height: auto !important;
+
+            .loginbg {
+                width: 330px;
+                height: 226px;
+            }
+        }
+
+        .loginform {
+            width: 100% !important;
+            height: auto !important;
+            justify-content: center;
+
+            display: flex !important;
+
+            .formContainer {
+                width: 95% !important;
+                margin: 0px !important;
+                padding: 10px 10px;
+
+                .formwrapper {
+                    width: 100% !important;
+
+                    h2 {
+                        font-size: 29px !important;
+                        margin-top: 10px !important;
+                    }
+
+                    .formItem {
+                        width: 90% !important;
+                    }
+
+                    .loginbtn {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }
+}

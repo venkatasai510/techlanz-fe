@@ -6,8 +6,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import style from "styles/Components/Topbar/topbar.module.scss";
 import Button from "react-bootstrap/Button";
+import { useRouter } from "node_modules/next/router";
 
 const Topbar = () => {
+  const router = useRouter()
   return (
     <div>
       <Navbar className={`${style.topBarContainer} bg-body-tertiary`}>
@@ -15,7 +17,6 @@ const Topbar = () => {
         <div className={style.middleSection}>
           <div>
             <Image src={SVGImages.logo} alt="logo" />
-
             <Navbar.Toggle />
           </div>
           <Dropdown>
@@ -60,8 +61,9 @@ const Topbar = () => {
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-
+          {router.pathname != "/login" && (
           <Button className={style.Loginbutton}>Login</Button>
+          )}
         </div>
         {/* </Container> */}
       </Navbar>
