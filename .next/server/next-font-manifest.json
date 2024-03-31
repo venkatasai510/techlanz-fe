@@ -1,7 +1,6 @@
 {
   "pages": {
-    "/_app": [],
-    "/": []
+    "/_app": []
   },
   "app": {},
   "appUsingSizeAdjust": false,

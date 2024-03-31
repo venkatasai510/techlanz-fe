@@ -61,7 +61,7 @@ import Project from "./project.png";
 import CoursesTableImage from "./coursesTableImage.png";
 import DesktopVideoImage from "./desktopVideoImage.png";
 import WhatPeopleThinkCard from "./whatPeopleThinkCard.png";
-
+import loginbg from "./Login/lanz-login-bg.png";
 const SVGImages = {
   logo: Logo,
   heroSection: HeroSection,
@@ -124,6 +124,7 @@ const SVGImages = {
   whatPeopleThinkCard: WhatPeopleThinkCard,
   google: Google,
   ratingFullStar: RatingFullStar,
+  loginbg: loginbg
 };
 
 export default SVGImages;
