@@ -15,23 +15,20 @@ const Topbar = () => {
       <Navbar className={`${style.topBarContainer} bg-body-tertiary`}>
         {/* <Container> */}
         <div className={style.middleSection}>
-          <div>
+          <div onClick={() => router.push("/")}>
             <Image src={SVGImages.logo} alt="logo" />
             <Navbar.Toggle />
           </div>
           <Dropdown>
-            <Dropdown.Toggle className={style.select} id="dropdown-basic">
-              Courses
-            </Dropdown.Toggle>
+            {router.pathname != "/courses" && (
+              <p onClick={() => router.push("/courses")}>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
+                Courses
+              </p>
+            )}
           </Dropdown>
 
-          <Dropdown>
+          {/* <Dropdown>
             <Dropdown.Toggle className={style.select} id="dropdown-basic">
               Services
             </Dropdown.Toggle>
@@ -41,7 +38,7 @@ const Topbar = () => {
               <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown> */}
 
           <Button variant="danger" className={style.dangerBtn}>
             Community

@@ -66,6 +66,7 @@ import mail from "./Footer/mail.png";
 import call from "./Footer/call.png";
 import blackMail from "./Footer/blackMail.png";
 import blackcall from "./Footer/blackcall.png";
+import home from "./Breadcrumbs/home.png"
 const SVGImages = {
   logo: Logo,
   heroSection: HeroSection,
@@ -133,6 +134,7 @@ const SVGImages = {
   call: call,
   blackMail: blackMail,
   blackcall: blackcall,
+  home: home
 };
 
 export default SVGImages;

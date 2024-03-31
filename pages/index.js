@@ -32,14 +32,22 @@ export default function Home() {
     speed: 500,
     arrows: true,
     dots: true,
+
   };
   const settingsMainSlider = {
     className: "center",
     centerMode: true,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 6000,
+    cssEase: "linear",
     arrows: true,
     dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
   return (
     <>
@@ -65,7 +73,8 @@ export default function Home() {
               {/* <Image src={SVGImages.linkArrowRight} alt="RightArrow" /> */}
             </Button>
           }
-          image={SVGImages?.videoCard}
+          // image={SVGImages?.videoCard}
+          src="https://www.youtube.com/embed/-XrFjmF4IGE?si=iT4njIOVQQi90FKA"
         />
 
         <LandingpageSliderCard
@@ -206,7 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
 
       <MentorSection />
 
@@ -218,9 +227,9 @@ export default function Home() {
 
       <WhyUsSection />
 
-      <WhatPeopleThinkSection />
+      {/* <WhatPeopleThinkSection /> */}
 
-      <div
+      {/* <div
         className={`${styles.sliderContainer} ${styles.anotherSliderContainer}`}
       >
         <h2 className={styles.anotherSlider}>Media Spotlights</h2>
@@ -237,7 +246,7 @@ export default function Home() {
             })}
         </Slider>
         <p className={styles.bottomText}>Read More News about us </p>
-      </div>
+      </div> */}
       <div className={styles.freqQues}>
         <h2>Frequently Asked questions</h2>
         <p>We have answered some of the frequent questions for you!</p>
