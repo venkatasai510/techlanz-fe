@@ -62,7 +62,7 @@ const Topbar = () => {
             </Dropdown.Menu>
           </Dropdown>
           {router.pathname != "/login" && (
-          <Button className={style.Loginbutton}>Login</Button>
+            <Button className={style.Loginbutton} onClick={() => router.push("/login")}>Login</Button>
           )}
         </div>
         {/* </Container> */}
