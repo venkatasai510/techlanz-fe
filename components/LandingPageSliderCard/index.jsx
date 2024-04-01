@@ -10,6 +10,7 @@ const LandingpageSliderCard = ({
   button,
   image,
   src,
+  price
 }) => {
   return (
     <div className={styles.landingPageSliderCardContainer}>
@@ -27,19 +28,23 @@ const LandingpageSliderCard = ({
 
         {title}
         <p>{description}</p>
+        {price}
         {button}
       </div>
       <div className={styles.rightSection}>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/-XrFjmF4IGE?si=VRECbDCA5UtQsXZZ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <Image src={image} alt="" />
+        {src &&
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-XrFjmF4IGE?si=VRECbDCA5UtQsXZZ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        }
       </div>
     </div>
   );

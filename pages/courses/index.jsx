@@ -7,6 +7,7 @@ import styles from "styles/Pages/courses/courses.module.scss";
 import Image from "node_modules/next/image";
 import CourseCard from "components/CourseCard/index";
 import Breadcrumbs from "components/Breadcrumbs/BreadCrumbs";
+import { useRouter } from "node_modules/next/router";
 
 
 const breadcrumbs = [
@@ -14,6 +15,12 @@ const breadcrumbs = [
   { text: 'Courses', url: '/courses' },
 ];
 const Courses = () => {
+  const router = useRouter()
+
+  const handleExplore = (item) => {
+    console.log("reaching")
+    router.push(`courses/${item?.id}`)
+  }
   return (
     <div>
       <Topbar />
@@ -60,6 +67,7 @@ const Courses = () => {
                         titleOne={"Battery + BMS BootCamp  "}
                         titleTwo={"Learn to build a complete"}
                         titleThree={"Battery + BMS from Scratch"}
+                        explore={() => handleExplore(item)}
                       />
                     );
                   })}

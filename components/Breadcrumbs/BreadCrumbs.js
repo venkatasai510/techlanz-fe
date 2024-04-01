@@ -20,7 +20,7 @@ const Breadcrumbs = ({ items }) => {
                             {item.text}
                         </Link>
                     )}
-                    {index !== items.length - 1 && index !== 0 && <span>&gt;</span>}
+                    {index !== items.length - 1 && index !== 0}
                 </li>
             ))}
         </ul>

@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import SVGImages from "assets/images/index";
 import Image from "node_modules/next/image";
 
-const CourseCard = ({ titleOne, titleTwo, titleThree }) => {
+const CourseCard = ({ titleOne, titleTwo, titleThree, explore }) => {
   return (
     <Card style={{ width: "291px" }} className={styles.CourseCardContainer}>
       <Image src={SVGImages.course} alt="asd" />
@@ -25,7 +25,7 @@ const CourseCard = ({ titleOne, titleTwo, titleThree }) => {
         </div>
       </Card.Body>
       <div className={styles.buttonSection}>
-        <Button className={styles.transparent}>Explore</Button>
+        <Button className={styles.transparent} onClick={() => explore()}>Explore</Button>
         <Button className={styles.green}>Enroll Now</Button>
       </div>
     </Card>

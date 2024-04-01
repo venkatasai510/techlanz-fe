@@ -1,0 +1,54 @@
+.courseContainer {
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .breadcrumbsWrapper {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .cardTitle {
+        font-family: "Poppins";
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 567px;
+    }
+
+    p {
+        color: #4D4D4D !important;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        height: 36px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+
+        }
+
+        div {
+            text-decoration: line-through;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+    }
+
+}
