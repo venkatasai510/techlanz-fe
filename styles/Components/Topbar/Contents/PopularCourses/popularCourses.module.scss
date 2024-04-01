@@ -1,0 +1,22 @@
+.border {
+  border-bottom: 1px dashed #abbed1;
+}
+
+.menu {
+  cursor: pointer;
+  .menuTitle {
+    font-size: 15px;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  .button {
+    padding: 0.6em 1em;
+    background-color: #333333;
+    border: 0.92px solid #abbed1;
+    color: white;
+  }
+}
