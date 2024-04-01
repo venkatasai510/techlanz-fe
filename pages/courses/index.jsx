@@ -1,80 +1,85 @@
 import SVGImages from "assets/images/index";
-import BookCall from "components/BookCall/index";
 import Footer from "components/Footer/index";
-import LandingpageSliderCard from "components/LandingPageSliderCard/index";
 import Topbar from "components/Topbar/index";
 import Button from "node_modules/react-bootstrap/esm/Button";
 import React from "react";
-import styles from "styles/Components/Courses/courses.module.scss";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import SliderCard from "components/SliderCard/index";
-import AccordianComponent from "components/AccordianComponent/index";
+import styles from "styles/Pages/courses/courses.module.scss";
 import Image from "node_modules/next/image";
-import TestimonialSection from "components/TestimonialSection/index";
-import MentorSection from "components/MentorSection/index";
+import CourseCard from "components/CourseCard/index";
+import Breadcrumbs from "components/Breadcrumbs/BreadCrumbs";
 
+
+const breadcrumbs = [
+  { text: 'Home' },
+  { text: 'Courses', url: '/courses' },
+];
 const Courses = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 2.8,
-    speed: 500,
-    arrows: true,
-    dots: true,
-  };
   return (
     <div>
       <Topbar />
-      <TestimonialSection />
-      <MentorSection />
-
-      <LandingpageSliderCard
-        title={
-          <div>
-            <h2 className={styles.cardTitle}>JOIN WORLD’S LARGEST</h2>
-            <h2 style={{ color: "#FF0000" }}>ELECTRIC VEHICLE ENGINEERING</h2>
-            <h2>COMMUNITY</h2>
-          </div>
-        }
-        description={
-          "Discuss the Ideas with people around the world & find answers to your most complex problems!"
-        }
-        button={<Button className="redButton">Join the Community</Button>}
-        image={SVGImages?.frame}
-      />
-
-      <BookCall />
-
-      <div className={styles.freqQues}>
-        <h2>Frequently Asked questions</h2>
-        <p>We have answered some of the frequent questions for you!</p>
-
-        <div className={styles.accordianContainer}>
-          {[
-            "Who should use the app?",
-            "What is included with my subscription?",
-            "How do I get paid?",
-            "Is my personal information safe?",
-            "How can we get in touch?",
-            "How can we get in touch?",
-          ]?.map((item, index) => {
-            return (
-              <div key={index} className={styles.accor}>
-                <AccordianComponent title={item} />
+      <div className={styles.wrapper}>
+        <Breadcrumbs items={breadcrumbs} />
+        <section>
+          <div className={styles.content}>
+            <div className={styles?.leftSection}>
+              <div className={styles?.tabSection}>
+                <p>Choose Your Domain</p>
               </div>
-            );
-          })}
-        </div>
-      </div>
+
+              {[
+                "Popular Courses",
+                "Electric Vehical",
+                "Ai For EV",
+                "Software For EV",
+                "New Product Developement",
+              ]?.map((item, index) => {
+                return (
+                  <div
+                    className={`${styles.tabButton} ${index === 0 ? styles.selected : ""
+                      }`}
+                  >
+                    {item}
+                  </div>
+                );
+              })}
+            </div>
+            <div className={styles?.rightSection}>
+              <div className={styles?.topTabSection}>
+                <span className={styles.active}>Live</span>
+                <span>Recorded</span>
+                <span>Corporate </span>
+                <span>Free</span>
+              </div>
+
+              <div className={styles.cardPage}>
+                {Array(4)
+                  .fill(" ")
+                  ?.map((item, index) => {
+                    return (
+                      <CourseCard
+                        titleOne={"Battery + BMS BootCamp  "}
+                        titleTwo={"Learn to build a complete"}
+                        titleThree={"Battery + BMS from Scratch"}
+                      />
+                    );
+                  })}
+              </div>
+              <div className={styles.buttonContainer}>
+                <Button className={styles.BlackButton}>
+                  Explore More Courses
+                  {/* <Image src={SVGImages.linkArrowRight} alt="asd" /> */}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
       <div className={styles.contactSection}>
         <Image src={SVGImages.contantUS} alt="/" />
+        </div>
       </div>
       <Footer />
     </div>
+
   );
 };
 

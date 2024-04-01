@@ -53,7 +53,7 @@ const Topbar = () => {
     <Navbar className={`${style.topBarContainer} bg-body-tertiary`}>
       <Container>
         <div className={style.middleSection}>
-          <div>
+          <div onClick={() => router.push("/")}>
             <Image src={SVGImages.logo} alt="logo" />
             <Navbar.Toggle />
           </div>

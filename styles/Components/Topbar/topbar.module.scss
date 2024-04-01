@@ -5,14 +5,17 @@
   width: 100%;
   padding: 10px 60px;
   border-bottom: 1px solid #c1c7cd;
+
   .middleSection {
     display: flex;
     align-items: center;
     gap: 29px;
+
     .dangerBtn {
       width: 162px;
     }
   }
+
   .select {
     background-color: #f5f7fa;
     //styleName: Body/Medium/Body 2;
@@ -89,6 +92,7 @@
     display: flex;
     align-items: center;
     gap: 24px;
+
     .Loginbutton {
       background-color: #f5f7fa;
       //styleName: Body/Medium/Body 2;
@@ -102,6 +106,7 @@
       border: 1px solid #0c0c0c;
       padding: 10px 30px;
     }
+
     p {
       margin-bottom: 0;
       font-family: "poppins";
@@ -112,5 +117,17 @@
       text-align: center;
       color: #0c0c0c !important;
     }
+  }
+  p {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0c0c0c !important;
+    cursor: pointer;
   }
 }

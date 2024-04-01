@@ -9,6 +9,7 @@ const LandingpageSliderCard = ({
   description,
   button,
   image,
+  src,
 }) => {
   return (
     <div className={styles.landingPageSliderCardContainer}>

@@ -4,19 +4,20 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Image from "node_modules/next/image";
 import SVGImages from "assets/images/index";
-
-const ServiceAndProjectCard = () => {
+const ServiceAndProjectCard = ({ title, metadata, url }) => {
+  const handleRoute = () => {
+    window.open(url, '_blank');
+  }
   return (
     <Card className={styles.container}>
       <Image src={SVGImages.project} alt="project" />
       <Card.Body>
-        <p>Embedded Electronics</p>
+        <p>{title}</p>
         <p className={styles.description}>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {metadata}
         </p>
       </Card.Body>
-      <div className={styles.btnContainer}>{"Discover >"}</div>
+      <div onClick={handleRoute} className={styles.btnContainer}>{"Discover >"}</div>
     </Card>
   );
 };

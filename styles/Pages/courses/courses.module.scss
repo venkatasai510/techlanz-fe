@@ -1,0 +1,107 @@
+.wrapper {
+    padding: 30px 0px 0px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    margin-top: 30px;
+    width: 95%;
+
+    .leftSection {
+        flex: 0.2;
+        background-color: #ffffff;
+        padding: 11px 16px;
+        min-width: 239px;
+
+        .tabButton {
+            font-family: "Poppins";
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 16px 0px;
+            background-color: #f5f7fa;
+            margin: 17px 0;
+            cursor: pointer;
+
+            &.selected {
+                background-color: #a3f2ed;
+            }
+        }
+
+        .tabSection {
+            p {
+                font-family: "Poppins";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #062b29;
+                border-bottom: 0.5px dashed #4d4d4d;
+            }
+        }
+    }
+
+    .rightSection {
+        flex: 0.8;
+
+        .topTabSection {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+
+            span {
+                //styleName: Body/Medium/Body 3;
+                font-family: "Poppins";
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: center;
+
+                &.active {
+                    color: #13827c;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .cardPage {
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .buttonContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .BlackButton {
+                background-color: #333333;
+                font-family: "Poppins";
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: center;
+                border: none;
+                min-width: 350px;
+                margin-top: 60px;
+            }
+        }
+    }
+}
