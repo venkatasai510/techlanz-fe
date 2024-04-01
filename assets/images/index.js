@@ -67,6 +67,13 @@ import call from "./Footer/call.png";
 import blackMail from "./Footer/blackMail.png";
 import blackcall from "./Footer/blackcall.png";
 import home from "./Breadcrumbs/home.png"
+import icon1 from "./Highlights/icon1.png"
+import icon2 from "./Highlights/icon2.png"
+
+import icon3 from "./Highlights/icon3.png"
+
+import icon4 from "./Highlights/icon4.png"
+
 const SVGImages = {
   logo: Logo,
   heroSection: HeroSection,
@@ -134,7 +141,13 @@ const SVGImages = {
   call: call,
   blackMail: blackMail,
   blackcall: blackcall,
-  home: home
+  home: home,
+  icon1: icon1,
+  icon2: icon2,
+  icon3: icon3,
+  icon4: icon4,
+
+
 };
 
 export default SVGImages;
