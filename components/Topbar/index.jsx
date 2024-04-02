@@ -22,14 +22,14 @@ const navigationLinks = {
       title: "Ai For EV",
       icon: AiFillFire,
     },
-    {
-      title: "Software For EV",
-      icon: AiFillFire,
-    },
-    {
-      title: "New Product Development",
-      icon: AiFillFire,
-    },
+    // {
+    //   title: "Software For EV",
+    //   icon: AiFillFire,
+    // },
+    // {
+    //   title: "New Product Development",
+    //   icon: AiFillFire,
+    // },
   ],
 };
 

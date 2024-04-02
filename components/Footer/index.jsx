@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import { useRouter } from "node_modules/next/router";
 
 const Footer = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div className={styles.footerSection}>
       <div className={styles.topSection}>
@@ -26,14 +26,16 @@ const Footer = () => {
 
       <div className={styles.footerLinksContainer}>
         <div className={styles.footerCol}>
-          <span className={styles.heading} onClick={() => router.push("/contact-us")}>Contact us</span>
+          <span
+            className={styles.heading}
+            onClick={() => router.push("/contact-us")}
+          >
+            Contact us
+          </span>
           <div className={styles.contactUsItem}>
             <Image src={SVGImages.mail} className={styles.contactIcon} />
             <div className={styles.contactTag}>
-              <a href="mailto:info@techlanz.com">
-
-                info@techlanz.com
-              </a>
+              <a href="mailto:info@techlanz.com">info@techlanz.com</a>
             </div>
           </div>
           <div className={styles.contactUsItem}>
@@ -45,8 +47,12 @@ const Footer = () => {
           <span className={styles.heading}>Techlanz</span>
           <span>About us</span>
           <span>Careers</span>
-          <span>Privacy policy</span>
-          <span>Terms & conditions</span>
+          <span onClick={() => router.push("/privacyPolicy")}>
+            Privacy policy
+          </span>
+          <span onClick={() => router.push("/termsAndCondition")}>
+            Terms & conditions
+          </span>
         </div>
         <div className={styles.footerCol}>
           <span className={styles.heading}>Products</span>
