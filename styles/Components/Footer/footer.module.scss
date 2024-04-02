@@ -3,6 +3,15 @@
   padding: 40px;
   width: 100%;
 
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    > img {
+      cursor: pointer;
+    }
+  }
+
   .topSection {
     display: flex;
     align-items: center;
@@ -68,37 +77,34 @@
         &.heading {
           font-size: 22px;
           margin-bottom: 28px;
-
         }
       }
     }
   }
 
-                                                                                                                                                                                                                                                                .contactUsItem {
-                                                                                                                                
-                                                                                                                                                                                                                                                                  padding: 5px;
-                                                                                                                                                                                                                                                                  display: flex;
-                                                                                                                                                                                                                                                                  align-items: center;
-                                                                                                                                                                                                                                                                  gap: 5px;
-                                                                                                                                
-                                                                                                                                                                                                                                                                  .contactIcon {
-                                                                                                                                                                                                                                                                    width: 15px;
-                                                                                                                                                                                                                                                                    height: 15px;
-                                                                                                                                                                                                                                                                    cursor: pointer;
-                                                                                                                                                                                                                                                                  }
-                                                                                                                                
-                                                                                                                                                                                                                                                                  .contactTag {
-                                                                                                                                                                                                                                                                    font-size: 14px !important;
-                                                                                                                                                                                                                                                                    font-weight: 500;
-                                                                                                                                                                                                                                                                    color: white;
-                                                                                                                                
-                                                                                                                                                                                                                                                                    a {
-                                                                                                                                                                                                                                                                      text-decoration: none;
-                                                                                                                                                                                                                                                                      color: white;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                  }
-                                                                                                                                
-                                                                                                                                                                                                                                                                }
+  .contactUsItem {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .contactIcon {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+
+    .contactTag {
+      font-size: 14px !important;
+      font-weight: 500;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
   .socialMediaLinks {
     p {
       //styleName: Body/S;
@@ -120,7 +126,7 @@
       display: flex;
       align-items: center;
       gap: 18px;
->img {
+      > img {
         cursor: pointer;
       }
     }

@@ -9,18 +9,14 @@ import CourseCard from "components/CourseCard/index";
 import Breadcrumbs from "components/Breadcrumbs/BreadCrumbs";
 import { useRouter } from "node_modules/next/router";
 
-
-const breadcrumbs = [
-  { text: 'Home' },
-  { text: 'Courses', url: '/courses' },
-];
+const breadcrumbs = [{ text: "Home" }, { text: "Courses", url: "/courses" }];
 const Courses = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleExplore = (item) => {
-    console.log("reaching")
-    router.push(`courses/${item?.id}`)
-  }
+    console.log("reaching");
+    router.push(`courses/${item?.id}`);
+  };
   return (
     <div>
       <Topbar />
@@ -37,13 +33,14 @@ const Courses = () => {
                 "Popular Courses",
                 "Electric Vehical",
                 "Ai For EV",
-                "Software For EV",
-                "New Product Developement",
+                // "Software For EV",
+                // "New Product Developement",
               ]?.map((item, index) => {
                 return (
                   <div
-                    className={`${styles.tabButton} ${index === 0 ? styles.selected : ""
-                      }`}
+                    className={`${styles.tabButton} ${
+                      index === 0 ? styles.selected : ""
+                    }`}
                   >
                     {item}
                   </div>
@@ -81,13 +78,12 @@ const Courses = () => {
             </div>
           </div>
         </section>
-      <div className={styles.contactSection}>
-        <Image src={SVGImages.contantUS} alt="/" />
+        <div className={styles.contactSection}>
+          <Image src={SVGImages.contantUS} alt="/" />
         </div>
       </div>
       <Footer />
     </div>
-
   );
 };
 

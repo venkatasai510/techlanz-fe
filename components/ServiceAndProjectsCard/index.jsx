@@ -4,20 +4,20 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Image from "node_modules/next/image";
 import SVGImages from "assets/images/index";
-const ServiceAndProjectCard = ({ title, metadata, url }) => {
+const ServiceAndProjectCard = ({ imageURl, title, metadata, url }) => {
   const handleRoute = () => {
-    window.open(url, '_blank');
-  }
+    window.open(url, "_blank");
+  };
   return (
     <Card className={styles.container}>
-      <Image src={SVGImages.project} alt="project" />
+      <Image src={imageURl} alt={{ imageURl }} />
       <Card.Body>
         <p>{title}</p>
-        <p className={styles.description}>
-          {metadata}
-        </p>
+        <p className={styles.description}>{metadata}</p>
       </Card.Body>
-      <div onClick={handleRoute} className={styles.btnContainer}>{"Discover >"}</div>
+      <div onClick={handleRoute} className={styles.btnContainer}>
+        {"Discover >"}
+      </div>
     </Card>
   );
 };

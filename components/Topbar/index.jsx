@@ -49,6 +49,8 @@ const Topbar = () => {
     e.stopPropagation();
   };
 
+  console.log({ selectedMenuItem });
+
   return (
     <Navbar className={`${style.topBarContainer} bg-body-tertiary`}>
       <Container>
@@ -159,7 +161,7 @@ const Topbar = () => {
         </div>
         <div className={style.rightSection}>
           <p>Articles</p>
-          <Dropdown>
+          {/* <Dropdown>
             <Dropdown.Toggle className={style.select} id="dropdown-basic">
               More
             </Dropdown.Toggle>
@@ -168,7 +170,7 @@ const Topbar = () => {
               <Dropdown.Item href="#/action-2">More 2</Dropdown.Item>
               <Dropdown.Item href="#/action-3">More 3</Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown> */}
           {router.pathname !== "/login" && (
             <Button
               className={style.Loginbutton}

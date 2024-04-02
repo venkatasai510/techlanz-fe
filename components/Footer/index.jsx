@@ -42,6 +42,16 @@ const Footer = () => {
             <Image src={SVGImages.call} className={styles.contactIcon} />
             <div className={styles.contactTag}>+91 9047116404</div>
           </div>
+
+          <div className={styles.contactUsItem}>
+            <div className={styles.icons}>
+              <Image src={SVGImages.youtube} alt="youtube" />
+              <Image src={SVGImages.facebook} alt="facebook" />
+              <Image src={SVGImages.twitter} alt="twitter" />
+              <Image src={SVGImages.instagram} alt="instagram" />
+              <Image src={SVGImages.linkedin} alt="linkedin" />
+            </div>
+          </div>
         </div>
         <div className={styles.footerCol}>
           <span className={styles.heading}>Techlanz</span>
@@ -56,29 +66,29 @@ const Footer = () => {
         </div>
         <div className={styles.footerCol}>
           <span className={styles.heading}>Products</span>
-          <span>Upskilling Courses</span>
-          <span>Our Services</span>
-          <span>Five Six</span>
-          <span>Seven Eight</span>
+          <span onClick={() => router.push("/courses")}>Courses</span>
+          <span>Services</span>
+          <span>Products & Solutions</span>
+          <span>Tools</span>
         </div>
         <div className={styles.footerCol}>
-          <span className={styles.heading}>Community</span>
-          <span>One Two</span>
-          <span>Three Four</span>
-          <span>Five Six</span>
-          <span>Seven Eight</span>
+          <span className={styles.heading}>Resources </span>
+          <span>Community</span>
+          <span>Articles </span>
+          <span>Webinars</span>
+          <span>Case studies</span>
         </div>
       </div>
 
       <div className={styles.socialMediaLinks}>
         <p> Techlanz @ 2024. All rights reserved.</p>
-        <div className={styles.icons}>
+        {/* <div className={styles.icons}>
           <Image src={SVGImages.youtube} alt="youtube" />
           <Image src={SVGImages.facebook} alt="facebook" />
           <Image src={SVGImages.twitter} alt="twitter" />
           <Image src={SVGImages.instagram} alt="instagram" />
           <Image src={SVGImages.linkedin} alt="linkedin" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
